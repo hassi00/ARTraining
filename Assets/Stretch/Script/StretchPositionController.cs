@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//
 public class StretchPositionController : MonoBehaviour
 {
 
@@ -15,6 +16,7 @@ public class StretchPositionController : MonoBehaviour
     private Vector3 distanceObjectPods;
     private Vector3 measurePods;
 
+    //距離想定のオブジェクトを生成
     public void DistanceCreate()
     {
         distanceObjectPods = Camera.main.transform.localPosition;

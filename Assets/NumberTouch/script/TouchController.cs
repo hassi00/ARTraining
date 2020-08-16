@@ -25,10 +25,13 @@ public class TouchController : MonoBehaviour
             other.transform.GetComponent<Renderer>().material = material;
             number++;
 
+            //クリア
             if (TouchController.number >= 10)
             {
                 NumbersPosition = other.transform.parent.position;
+                //表示されている数字を削除
                 Destroy(other.transform.parent.gameObject);
+                //２秒後星を表示
                 Invoke("ClearTraining", 2.0f);
 
             }
@@ -41,13 +44,5 @@ public class TouchController : MonoBehaviour
     {
         Instantiate(StarPrefab, NumbersPosition,Quaternion.identity);
     }
-
-    void Start()
-    {
-
-
-    }
-
-
 
 }

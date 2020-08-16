@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//距離を表示（３Dテキスト）
 public class DistancePrefabController : MonoBehaviour
 {
     // Start is called before the first frame update
+    //20~80cmの３Dテキストを非表示
     void Start()
     {
         for (int i = 1; i <= 7; i++)
@@ -14,6 +16,7 @@ public class DistancePrefabController : MonoBehaviour
 
     }
 
+    //距離によって３Dテキストを表示
     // Update is called once per frame
     void Update()
     {

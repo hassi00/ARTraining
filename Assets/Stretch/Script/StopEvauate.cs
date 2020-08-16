@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//星の表示処理
 public class StopEvauate : MonoBehaviour
 {
     float ChangeCollorSpan = 0;
@@ -14,6 +15,7 @@ public class StopEvauate : MonoBehaviour
     }
 
     // Update is called once per frame
+    //星の色を変える処理
     void Update()
     {
         if (changeStarInt + 1 <= StretchStarNumber())
@@ -29,6 +31,7 @@ public class StopEvauate : MonoBehaviour
 
     }
 
+    //距離によって星の数を決める
     private int StretchStarNumber()
     {
         int num = 0;

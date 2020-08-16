@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class changeColloor : MonoBehaviour
+//星の色を変える
+public class ChangeColloor : MonoBehaviour
 {
-
+    //次の星の色を変える時間
     float ChangeCollorSpan = 0;
+    //色を変える数
     int changeStarInt = 0;
+
+    //変える星の番号
     public  float spanDetermin = 1;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,7 @@ public class changeColloor : MonoBehaviour
         
     }
 
+    //クリア時間によって星の数を決める
     private int StarNumber()
     {
         int num = 0;
